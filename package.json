@@ -1,0 +1,32 @@
+{
+  "name": "proxy-reader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "axios": "^0.19.2",
+    "dayjs": "^1.8.28",
+    "emotion": "^10.0.27",
+    "lodash": "^4.17.15",
+    "mobx": "^5.15.4",
+    "mobx-react-lite": "^2.0.7",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-process-string": "^1.2.0",
+    "recompose": "^0.30.0",
+    "titleize": "^2.1.0",
+    "url-regex": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.10.1",
+    "babel-plugin-emotion": "^10.0.33"
+  }
+}

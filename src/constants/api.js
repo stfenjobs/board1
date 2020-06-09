@@ -1,0 +1,1 @@
+export const API_URL = 'https://fanboi.ch/api/1.0/'
