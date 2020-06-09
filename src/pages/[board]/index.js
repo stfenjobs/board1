@@ -21,7 +21,7 @@ export default observer(({ topics, all }) => {
 })
 
 const fetchTopics = async (board) => {
-  const { data } = await axios.post('http://localhost:3000/api/get', {
+  const { data } = await axios.post(`${process.env.HOST}/api/get`, {
     path: `boards/${board}`,
     topics: 1,
   })
@@ -30,7 +30,7 @@ const fetchTopics = async (board) => {
 }
 
 const fetchAllTopics = async (board) => {
-  const { data } = await axios.post('http://localhost:3000/api/get', {
+  const { data } = await axios.post(`${process.env.HOST}/api/get`, {
     path: `boards/${board}/topics`
   })
 

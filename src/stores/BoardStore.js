@@ -9,7 +9,7 @@ class BoardStore {
   fetchBoardList() {
     if (this.boardList.length) return
 
-    axios.post('http://localhost:3000/api/get', {
+    axios.post(`${process.env.HOST}/api/get`, {
       path: 'boards'
     }).then(({ data }) => {
       this.boardList = data

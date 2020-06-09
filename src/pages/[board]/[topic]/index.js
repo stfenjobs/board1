@@ -21,7 +21,7 @@ export default observer(({ posts, isRecent }) => {
 })
 
 const fetchPosts =  async topic => {
-  const { data } = await axios.post('http://localhost:3000/api/get', {
+  const { data } = await axios.post(`${process.env.HOST}/api/get`, {
     path: `topics/${topic}/posts`
   })
 
@@ -29,7 +29,7 @@ const fetchPosts =  async topic => {
 }
 
 const fetchRecentPosts = async topic => {
-  const { data } = await axios.post('http://localhost:3000/api/get', {
+  const { data } = await axios.post(`${process.env.HOST}/api/get`, {
     path: `topics/${topic}`,
     posts: 1,
   })

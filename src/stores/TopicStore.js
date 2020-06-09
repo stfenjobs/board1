@@ -19,7 +19,7 @@ class TopicStore {
       return
     }
 
-    axios.post('http://localhost:3000/api/get', {
+    axios.post(`${process.env.HOST}/api/get`, {
       path: `topics/${id}`,
     }).then(({ data }) => {
       this.currentTopic = data
